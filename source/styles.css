@@ -1,0 +1,23 @@
+h1 {
+  color: black;
+  font-family: Times New Roman;
+  font-size: 300%;
+}
+
+h3 {
+  color: black;
+  font-family: Helvetica;
+}
+
+h4 {
+  color: black;
+  text-align: left;
+  font-size: 130%;
+  font-family: Helvetica;
+}
+
+p {
+  color: black;
+  font-family: Helvetica;
+  font-size: 130%;
+}

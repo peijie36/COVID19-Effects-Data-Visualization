@@ -1,0 +1,14 @@
+name: Final_Project
+title:
+username:
+account: scottng
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5812837
+bundleId: 5663466
+url: https://scottng.shinyapps.io/Final_Project/
+when: 1646858997.29883
+lastSyncTime: 1646858997.29883
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|Chart 1.R|Chart 2.R|Chart 3.R|data_access.R|README.md|Table.R

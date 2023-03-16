@@ -1,0 +1,83 @@
+---
+title: "COVID-19: Can't Sleep Through The Pandemic"
+author: "Scott Nguyen <br /> Patricia Ma <br /> Peijie Zheng  <br /> James Doan  <br /> Zhangsiwen Yue"
+date: "2/18/2022"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+source("../source/Table.R")
+source("../source/Chart 1.R")
+source("../source/Chart 2.R")
+source("../source/Chart 3.R")
+library(knitr)
+```
+
+## Abstract
+Our driving question is “What is the impact of COVID-19 on people’s physical and mental health with relation to sleep quality?”. This question is important because available resources about this issue are scarce and we want to provide more accessibility to data and insights as a group. To address this question, we will use available data sets to critically analyze the data and provide insights about how our health is negatively impacted by COVID-19. 
+
+## Introduction
+In the midst of 2020, a severe pandemic broke out all around the world affecting everyone. Families were affected in multiple ways whether it be physically, mentally, or financially, COVID-19 has significant harms on our well being. As a group, we found that poor mental health can be derived from stress and poor quality of sleep. Together they have adverse consequences towards us humans. We figured that throughout the past two years, positive mental health is at a declination. For our project, we have ventured in a direction to create methods in providing accessible data and resources to educate folks upon the effects of COVID-19 on different aspects of our health. Specifically, we are focusing on the correlation of socialization, quality of sleep, mental well being, and COVID-19.
+
+## Design Sitatuion 
+**Project Framing:** The goals of this project is to extract the data provided to us from the “Boston College daily sleep and well-being survey data” designed by Tony Cunningham, Eric Fields, and Elizabeth Kensinger and then reconstruct and present the data in a format that is easy to understand in order to draw conclusions of the impact of COVID-19 on the individuals sleep, socialization, and mental and physical health. 
+<br /> **Human Values:** Within this project we are going to be focusing on the impact of COVID-19 on the lives of the people that were surveyed within the data set we are using. We are hoping to find the relationship between COIVD-19 and the impacts on the individuals social interactions alongside their mental and physical health as a result of COVID-19. We are deciding to work on this data set as COVID-19 has heavily affected all of us and we wanted to provide people information on how it has impacted others as well as we are all going through this together. Within this, we find human values as the ability for individuals to have control of their life style however, COVID-19 has placed constraints on everyone’s lives. <br /> **Stakeholders:** The direct stakeholders for our topic of the impact of COVID-19 on sleep and mental and physical health would be data analysts who use the data, the viewers of that data, the individuals surveyed, and the people who would use the data. These people share the knowledge of what the data holds and the goals of the data. For the indirect stakeholders we would say that they are the individuals who could be impacted by the usage of the data whether that be the citizens of an area that a government official uses the data in or somewhere else.
+<br /> **Possible Benefits & Harms:** The possible benefits of this data is that governments or companies specifically in the public health industry could use the data to provide help for the general public or workers. They would gain a deeper understanding of the impacts of COVID-19 on the lives of many people. Therefore, this project can help provide information for industry experts to work towards making changes. However, possible harms for using the data set is that inaccurate data can result in making wrong claims about the impacts of COVID-19 which may downplay the actual effect of COVID-19 and can result in a loss of opportunity to help the individuals severely affected by the pandemic. 
+
+## Research Questions
+<br /> What’s the correlation between sleep quality and COVID-19?
+<br /> What’s the connection between sleep quality and mental health, particularly during COVID-19 time? 
+<br /> What's the impact of COVID-19 on an individual's physical health?
+<br /> What's the impact of COVID-19 on the stress level of an individual?
+
+## Relevance of Research Questions
+We think these questions are essential for us to understand the effects of COVID-19 on the lifestyles of many individuals. Whether it had been because of unemployment, isolation, or being exposed to covid itself, COVID-19 has changed the way we live. Particularly, these questions are also important to answer as they will help us understand the impact of stress on sleep and mental health and how COVID-19 has triggered these negative feelings. Knowing these information would allow medical practitioners to help patients to better cope with mental stressors and live a healthier life. We will address these questions by working with the data sets and analyzing them so we can examine the impacts of COVID-19 on varying aspects of individual lives.
+
+## Data set
+**Data Provenance:** The data sets we will be using come from the _“Boston College daily sleep and well-being survey data during early phase of the COVID-19 pandemic”_ compiled by Tony Cunningham, Eric Fields, and Elizabeth Kensinger from Boston College. The study was conducted in March 2020, the beginning of the COVID-19 pandemic. The main focus of this study was to examine the health effects and mental health repercussions of COVID-19, something often overlooked during the early stage of the pandemic. By designing such a study, it presents a unique opportunity to learn how large groups of people respond to persistent stress and uncertainty. For research methods, participants were “recruited primarily via social media, direct emails to individuals who had expressed an interest in being contacted about research studies, and emails to listservs with members interested in relevant topics (e.g. scientific societies.” The creators designed demographic surveys and daily surveys for participants to assess their well-being. The goal of these surveys was to learn more about the effects of the COVID-19 pandemic and the accompanying reaction measures (such as social isolation and "lockdowns") on mental health and sleep patterns. The survey responses from participants are collected and compiled as data sets. The data is validated using a Python script to ensure that all responses lie within the expected ranges of the attribute columns(e.g. numeric values within 1 to 7), while open-ended responses are cleaned up for spelling errors. Data that are not in the range and logically implausible are replaced as null values. These data sets are available on the Open Science Framework (OSF) platform along with detailed descriptions and a table of contents for each data set. Our team was unable to obtain any information regarding the investors who funded nor people who profited from the study. Overall, this data set provides data in a format that is easy to work with and is mostly tamperer for us to gain insights and answer our research questions from the data. <br /> **Data size and complexity:** The data set has many nuanced measurements. It consists of around 50,000 observations (rows) and as many as 100 attributes! Each observation represents a participant’s responses to the daily survey designed for the study. To better utilize the data sets, we will only use attributes directly related to our project, such as participants’ sleep logs, daily activities, socialization, exercise, stress, COVID19 impact, etc. There is sufficient data to support our research and data analysis on the topic. 
+
+## Implications 
+Our project focuses on the relationship between COVID to sleep deprivation, alcohol consumption, and mental health. While assuming there is a positive correlation between the spread and positive test result of COVID with these attributes, we suggest that policy makers and schools pay extra attention to alcohol consumption in families. Particularly, they should focus on young populations such as teenagers and young adults encase of this population develop the habit of consuming alcohol as a coping mechanism during this time. Furthermore, there are institutions that are implementing this, but it is crucial to attend to the needs students and employees who express stress and anxiety that need time off for mental health reasons. This pandemic has created unnecessary and added stress that is already burdensome. We also encourage policymakers to design reasonable homework workloads in schools to make sure children and teenagers are getting enough sleep and rest.
+
+## Limitations
+The researchers stated in their original article that the sample of this study was primarily comprised of white females who are well-educated and from the United States (Massachusetts to be more specific). With that being said, this is going to limit the generalization of the research finding to other regions of the world, other genders, and ethnicity. This data set also contains problems of response bias since users might not submit responses on days when they don’t feel well; subjective assessment which is the nature of this type of study, heavily relied on self-report.
+
+## Paragraph of summary information
+<br /> **Variable 1** examines whether there is an association between sleep latency and quarantine. Here, we filtered our data frame by maximum sleep latency, which represents the greatest amount of time for one to fall asleep and check if the subject is quarantining by pulling the `quarantine` variable. As a result, we found that the quarantine status is 1, indicating that the subject with maximum sleep latency is quarantining. This variable is important because it shows that quarantining could contribute to difficulty falling asleep which shows how covid has impacted sleep quality. 
+
+<br /> **Variable 2** examines whether there is an association between night awakening time and socializing. Here, we filtered our data frame by maximum night awakening time and check if the subject has socialized by pulling the `socialize` variable. As a result, we found that the socialize status is 0, indicating that the subject with maximum night awakening time is not socializing. This variable is important because it shows that not socializing could contribute to disrupted sleep which shows how covid has impacted sleep quality. 
+
+<br /> **Variable 3** examines what proportion of subjects feeling very excited is also socializing. By calculating the total number of subject rating 5 for excitement and the number of subject rating 5 who are also socializing, we are able to find out the proportion of subject feeling excited due to socializing. As a result, we found that about 79.6% of subjects feeling excited is also socializing. This variable is important because it answers the question whether socializing could inflict positive feelings, which made a powerful speech about how COVID had prevented socializing and inhibits positive feelings like excitement.
+
+<br /> **Variable 4** examines what proportion of subjects feeling very distressed is also COVID positive. By calculating the total number of subject rating 5 for distressed and the number of subject rating 5 for distressed who are also COVID positive, we are able to find out the proportion of subject feeling distressed related to COVID infection. As a result, we found that about 1.4% of subjects feeling distressed is also COVID positive. This variable is important because it answers the question whether COVID infection could inflict negative feelings like distress.
+
+<br /> **Variable 5** examines what proportion of subjects feeling very enthusiastic is also COVID positive. By calculating the total number of subject rating 5 for enthusiasm and the number of subject rating 5 for enthusiasm who are also COVID positive, we are able to find out the proportion of subject feeling enthusiastic related to COVID infection. As a result, we found that about 0.8 % of subjects feeling enthusiastic is also COVID positive. This variable is important because it answers the question whether COVID infection could inflict positive feelings like enthusiasm.
+
+<br /> As a result, by comparing variable 4 and 5, we can make an educated assumption that COVID is more likely to inflict negative feelings rather than positive.**
+
+
+## Table of aggregated data & Description of pertinent observations
+```{r echo=FALSE}
+kable(aggregate_table)
+```
+<br /> In this aggregated table, you can see the summarized data for participants’ total sleep time in hours, their difficulty falling asleep on a scale of 1-3 with 1 being the easiest, their total minutes of virtual socialization, their stress level, exercise rate, isolation levels and worry levels — all grouped by their covid status whether they are positive or not. We can clearly see that participants who tested positive for covid had a harder time falling asleep; on average they socialize less online than their peers who tested negative; they experience more stress; have less energy which leads to lower exercise rate; higher isolation level and much higher worry level. There’s a positive correlation between testing positive for COVID and almost all attributes we are looking at, which suggests that COVID is affecting us in many ways other than physical discomfort.
+
+## Chart #1 & Description of the purpose and pertinent observations 
+```{r echo=FALSE}
+plot(covid_on_physical)
+```
+
+<br /> **Chart #1** explains the impact of COVID-19 on socialized minutes. Socialization minutes referred to non-physical forms of contact such as phone calls or other means of online contact. Chart #1 depicts the relationship of social minutes of people who contracted COVID-19 and those who did not. Within the chart it showed that median and the quartiles were entirely the same between those who did and did not contract COVID-19. However, there was a difference in the range. We decided to use this chart because it directly connected COVID-19 with online socialization. 
+
+## Chart #2 & Description of the purpose and pertinent observations 
+```{r echo=FALSE}
+plot(COVID_TST_visualization)
+```
+<br /> **Chart #2** explains the impact of COVID-19 on sleep quality. The chart dives into difficulty of sleep verses the average sleep time between folks who contracted COVID and those who did not. The chart portrayed that there is a higher proportion of folks who contracted COVID-19 having a more difficult time of sleeping compared to their counterparts. We chose to visualize using this chart because it allows us to visualize the data between the impact of COVID-19 and sleep quality indicated by the total sleep time and the difficulty of sleep.
+
+## Chart #3 & Description of the purpose and pertinent observations 
+
+```{r echo=FALSE}
+plot(covid_on_mental)
+```
+<br /> **Chart #3** explains the impact of COVID-19 on mental health. Here, it relates the average total levels of stress to mental health. It depicts the difference in mental stress between people with COVID-19 and people without COVID-19. Within the chart it depict that those who contracted COVID-19 typically have a higher isolation, stress, and worry level. We wanted to use this chart because it related COVID-19 to Mental Health, giving us a direct comparison between COVID and people.
